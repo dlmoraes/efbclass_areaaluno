@@ -19,6 +19,10 @@ class Categoria(Timestamps):
 class TipoMaterial(Timestamps):
     nome = models.CharField(max_length=60)
 
+    class Meta:
+        verbose_name = 'Tipo de Material'
+        verbose_name_plural = 'Tipos de Material'
+
     def __str__(self):
         return self.nome
 
